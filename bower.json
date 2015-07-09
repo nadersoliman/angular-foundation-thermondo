@@ -24,4 +24,5 @@
     "angular": "=1.3.3"
   },
   "version": "0.6.0",
+  "main": ["./mm-foundation-custom-tpls-0.6.0.js"]
 }
