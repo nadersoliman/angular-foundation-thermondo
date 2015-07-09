@@ -1,5 +1,6 @@
 # angular-foundation-thermondo
-A Thermondo specific build for angular-foundation
+A Thermondo specific build for angular-foundation.
 
-Built against angular-foundation v0.6.0 and contains only tooltips.
+## Current Included components
+ 1. tooltips.
 
