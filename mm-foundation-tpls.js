@@ -2,7 +2,7 @@
  * angular-mm-foundation
  * http://pineconellc.github.io/angular-foundation/
 
- * Version: 0.6.0 - 2015-07-08
+ * Version: 0.6.0 - 2015-07-09
  * License: MIT
  * (c) Pinecone, LLC
  */
@@ -501,4 +501,26 @@ angular.module( 'mm.foundation.tooltip', [ 'mm.foundation.position', 'mm.foundat
 
 .directive( 'tooltipHtmlUnsafe', [ '$tooltip', function ( $tooltip ) {
   return $tooltip( 'tooltipHtmlUnsafe', 'tooltip', 'mouseenter' );
+}]);
+
+angular.module("template/tooltip/tooltip-html-unsafe-popup.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tooltip/tooltip-html-unsafe-popup.html",
+    "<span class=\"tooltip tip-{{placement}}\"\n" +
+    "  ng-class=\"{ in: isOpen(), fade: animation() }\"\n" +
+    "  style=\"width: auto\">\n" +
+    "  <span bind-html-unsafe=\"content\"></span>\n" +
+    "  <span class=\"nub\"></span>\n" +
+    "</span>\n" +
+    "");
+}]);
+
+angular.module("template/tooltip/tooltip-popup.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("template/tooltip/tooltip-popup.html",
+    "<span class=\"tooltip tip-{{placement}}\"\n" +
+    "  ng-class=\"{ in: isOpen(), fade: animation() }\"\n" +
+    "  style=\"width: auto\">\n" +
+    "  <span ng-bind=\"content\"></span>\n" +
+    "  <span class=\"nub\"></span>\n" +
+    "</span>\n" +
+    "");
 }]);

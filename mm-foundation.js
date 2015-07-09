@@ -2,7 +2,7 @@
  * angular-mm-foundation
  * http://pineconellc.github.io/angular-foundation/
 
- * Version: 0.6.0 - 2015-07-08
+ * Version: 0.6.0 - 2015-07-09
  * License: MIT
  * (c) Pinecone, LLC
  */
