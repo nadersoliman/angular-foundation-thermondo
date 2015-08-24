@@ -372,7 +372,10 @@ angular.module( 'mm.foundation.tooltip', [ 'mm.foundation.position', 'mm.foundat
 
             function removeTooltip() {
               if (tooltip) {
-                tooltip.remove();
+                  var tt = tooltip;
+                  $timeout(function(){
+                      tt.remove();
+                  });
                 tooltip = null;
               }
             }
