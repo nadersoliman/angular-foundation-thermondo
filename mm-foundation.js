@@ -374,7 +374,7 @@ angular.module( 'mm.foundation.tooltip', [ 'mm.foundation.position', 'mm.foundat
                 var tt = tooltip;
                 $timeout(function(){
                   tt.remove();
-                }, 300);
+                }, 50);
                 tooltip = null;
               }
             }
