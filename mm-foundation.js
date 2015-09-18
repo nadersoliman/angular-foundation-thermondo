@@ -2,7 +2,7 @@
  * angular-mm-foundation
  * http://pineconellc.github.io/angular-foundation/
 
- * Version: 0.6.0 - 2015-08-24
+ * Version: 0.6.0 - 2015-09-18
  * License: MIT
  * (c) Pinecone, LLC
  */
@@ -374,7 +374,7 @@ angular.module( 'mm.foundation.tooltip', [ 'mm.foundation.position', 'mm.foundat
                 var tt = tooltip;
                 $timeout(function(){
                   tt.remove();
-                });
+                }, 300);
                 tooltip = null;
               }
             }
